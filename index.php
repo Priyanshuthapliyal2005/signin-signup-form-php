@@ -9,7 +9,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     exit;
 }
 
-// Assuming you have a "signup" table with columns "id", "username", and "email"
+// "signup" table with columns "id", "username", and "email"
 $query = "SELECT id, username, email FROM signup";
 $result = $conn->query($query);
 ?>
